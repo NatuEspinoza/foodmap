@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Foodmap</title>
+</head>
+
+<body>
+  <!-- Pantalla inicial splash -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12" id="splash" style="display:none;">
+        <h1 id="title1">Foodmap</h1>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+            <span class="sr-only">100% Complete</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección inicial -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 initial">
+        <h1 class="title text-center">Foodmap</h1>
+        <hr>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53278.03225856949!2d-70.669858!3d-33.42645055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513090067654" width="500" height="170" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12">
+        <h2>Comida cerca de ti</h2>
+        <!-- Filtro de búsqueda -->
+        <div class="input-group">
+          <div class="input-group-btn search-panel">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filtrar por</span> <span class="caret"></span>
+                    </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a id="mexicana" href="#">Comida Mexicana</a></li>
+              <li><a id="japonesa" href="#">Comida Japonesa</a></li>
+              <li><a id="peruana" href="#">Comida Peruana</a></li>
+              <li><a id="arabe" href="#">Comida Árabe</a></li>
+            </ul>
+          </div>
+          <input type="hidden" name="search_param" value="all" id="search_param">
+          <input type="text" class="form-control" name="x" placeholder="Search term...">
+          <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comida Peruana -->
+  <div id="img-peruana" class="container images" style="display: none;">
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/aji-seco.jpg" alt="aji-seco">
+        </a>
+      </div>
+    </div>
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/tanta.jpg" alt="tanta">
+        </a>
+      </div>
+    </div>
+
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/olan.jpg" alt="olan">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comida Mexicana -->
+  <div id="img-mexicana" class="container images" style="display: none;">
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/aji-seco.jpg" alt="aji-seco">
+        </a>
+      </div>
+    </div>
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/tanta.jpg" alt="tanta">
+        </a>
+      </div>
+    </div>
+
+    <div class="row center-block">
+      <div class="col-xs-12 col-sm-12 img-responsive img-circle">
+        <a href="#" class="thumbnail">
+          <img src="assets/img/olan.jpg" alt="olan">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

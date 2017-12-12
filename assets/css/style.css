@@ -1,0 +1,43 @@
+body{
+  background: #2b2b2b;
+  height: 100%;
+  text-align: center;
+}
+
+h2{
+  color: #da9d00;
+}
+
+iframe{
+  width: 100%;
+}
+
+
+#splash {
+  width: 100%;
+  height: auto;
+  color: #da9d00;
+  background: #2b2b2b;
+}
+
+#title1 {
+  text-align: center;
+  padding-top: 40vh;
+  font-weight: lighter;
+}
+
+.progress {
+  margin-bottom: 45vh;
+}
+
+.title{
+  color: #da9d00;
+  font-size: 4em;
+  font-weight: lighter;
+}
+
+.images {
+  margin-top: 1em;
+}
+
+/* Estilos del mouse hover */
