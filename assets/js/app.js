@@ -22,6 +22,28 @@ $(document).ready(function() {
    */
   $('#peruana').click(function(){
     $('#img-peruana').fadeIn(1000).show();
-
+    $('#img-mexicana').hide();
+    $('#img-japonesa').hide();
+    $('#img-arabe').hide();
   })
+  $('#mexicana').click(function(){
+    $('#img-mexicana').fadeIn(1000).show();
+    $('#img-peruana').hide();
+    $('#img-japonesa').hide();
+    $('#img-arabe').hide();
+  })
+  $('#japonesa').click(function(){
+    $('#img-japonesa').fadeIn(1000).show();
+    $('#img-peruana').hide();
+    $('#img-mexicana').hide();
+    $('#img-arabe').hide();
+  })
+  $('#arabe').click(function(){
+    $('#img-arabe').fadeIn(1000).show();
+    $('#img-peruana').hide();
+    $('#img-mexicana').hide();
+    $('#img-japonesa').hide();
+  })
+
+
 })

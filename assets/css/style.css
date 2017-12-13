@@ -50,14 +50,13 @@ iframe{
 
 h3 {
   font-size: 20px;
-  color: #444444;
+  color: #2b2b2b;
 }
 .basic-widgets {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* project hover*/
 .project-hover {
   position: relative;
   overflow: hidden;
@@ -71,7 +70,7 @@ h3 {
   opacity: 1;
 }
 .project-hover:hover img {
-  opacity: .8;
+  opacity: .5;
 }
 .project-hover .text-view {
   width: 95%;
