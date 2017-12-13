@@ -4,7 +4,11 @@ $(document).ready(function() {
    *
    */
   $().ready(function() {
-    $("#splash").fadeIn(500).fadeOut(5000);
+    $('.inicial').hide();
+    $("#splash").fadeIn(500).fadeOut(5000, show);
+    function show (){
+      $('.inicial').show();
+    }
   });
   /**
    * Función del buscador
@@ -48,6 +52,6 @@ $(document).ready(function() {
   /**
    * MODALES
    */
-   
+
 
 })
