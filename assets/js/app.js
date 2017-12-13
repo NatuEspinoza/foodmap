@@ -18,7 +18,7 @@ $(document).ready(function() {
  		$('.input-group #search_param').val(param);
  	});
   /**
-   * Función para filtrar por tipo de comida
+   * Funciones para filtrar por tipo de comida
    */
   $('#peruana').click(function(){
     $('#img-peruana').fadeIn(1000).show();
@@ -45,5 +45,9 @@ $(document).ready(function() {
     $('#img-japonesa').hide();
   })
 
+  /**
+   * MODALES
+   */
+   
 
 })

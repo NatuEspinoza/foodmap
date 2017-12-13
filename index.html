@@ -30,7 +30,8 @@
       <div class="col-xs-12 col-sm-12 initial">
         <h1 class="title text-center">Foodmap</h1>
         <hr>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d106380.78665882551!2d-70.69822500399394!3d-33.56897304360589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses!2scl!4v1513127797339" width="200" height="170" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d106380.78665882551!2d-70.69822500399394!3d-33.56897304360589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1ses!2scl!4v1513127797339" width="200" height="170" frameborder="0"
+          style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -63,7 +64,7 @@
   </div>
 
   <!-- Comida Peruana -->
-  <div id="img-peruana" class="container images" style="display: none;">
+  <div id="img-peruana" class="container images">
     <div class="row center-block">
       <div class="col-xs-12 col-sm-12 img-responsive img-circle">
         <div class="basic-widgets">
@@ -75,7 +76,7 @@
               <h3>Aji Seco</h3>
             </div>
             <div class="btn-view transition text-center">
-              <a id="btn-aji" type="submit" class="btn btn-warning">Hacer pedido</a>
+              <a id="btn-aji" type="submit" class="btn btn-warning" data-toggle="modal" data-target="#modal-aji">Hacer pedido</a>
             </div>
           </div>
         </div>
@@ -120,7 +121,7 @@
   </div>
 
   <!-- Comida Mexicana -->
-  <div id="img-mexicana" class="container images" style="display: none;">
+  <div id="img-mexicana" class="container images">
     <div class="row center-block">
       <div class="col-xs-12 col-sm-12 img-responsive img-circle">
         <div class="basic-widgets">
@@ -132,7 +133,7 @@
               <h3>El Ranchero</h3>
             </div>
             <div class="btn-view transition text-center">
-              <a id="btn-ranchero" type="submit" class="btn btn-warning">Hacer pedido</a>
+              <a id="btn-ranchero" type="submit" class="btn btn-warning" data-toggle="modal" data-target="#modal-ranchero">Hacer pedido</a>
             </div>
           </div>
         </div>
@@ -177,7 +178,7 @@
   </div>
 
   <!-- Comida japonesa -->
-  <div id="img-japonesa" class="container images" style="display: none;">
+  <div id="img-japonesa" class="container images">
     <div class="row center-block">
       <div class="col-xs-12 col-sm-12 img-responsive img-circle">
         <div class="basic-widgets">
@@ -219,7 +220,7 @@
         <div class="basic-widgets">
           <div class="project-hover">
             <a href="#" class="thumbnail">
-              <img src="assets/panko.jpg" alt="panko">
+              <img src="assets/img/panko.jpg" alt="panko">
             </a>
             <div class="text-view transition text-center">
               <h3>Panko</h3>
@@ -234,7 +235,7 @@
   </div>
 
   <!-- Comida Árabe -->
-  <div id="img-arabe" class="container images" style="display: none;">
+  <div id="img-arabe" class="container images">
     <div class="row center-block">
       <div class="col-xs-12 col-sm-12 img-responsive img-circle">
         <div class="basic-widgets">
@@ -289,6 +290,89 @@
       </div>
     </div>
   </div>
+
+  <!-- MODALES -->
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 center-block">
+        <div id="modal-aji" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <button type="button" class="close" style="margin: 1em 2em 0 0;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <h2>Ají Seco</h2>
+                  <iframe class="map-modal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.05582121258!2d-70.64277158518128!3d-33.421789003427115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5eb443af4f1%3A0x20763effcec9ee43!2sLa+Casona+del+Aj%C3%AD+Seco!5e0!3m2!1ses!2scl!4v1513164879109"
+                    width="100" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 2em; text-align: left;">
+                <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  <span> Av. Perú 956, Recoleta, Región Metropolitana</span>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <span> Servicio Delivery</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-sm-4 col-xs-offset-1 col-sm-offset-1">
+                  <a type="submit" class="btn btn-warning" style="margin: 1em 0 3em 0">Confirmar pedido</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ranchero -->
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 center-block">
+        <div id="modal-ranchero" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <button type="button" class="close" style="margin: 1em 2em 0 0;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <h2>El Ranchero</h2>
+                  <iframe class="map-modal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.3011168963403!2d-70.57073868518236!3d-33.38930750176221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c92b523dbbd5%3A0xab6865bd46b51979!2sTaquer%C3%ADa+El+Ranchero!5e0!3m2!1ses!2scl!4v1513171939700" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="row" style="margin-top: 2em; text-align: left;">
+                <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  <span> Av Vitacura 6489, Vitacura, Región Metropolitana</span>
+                </div>
+                <div class="col-xs-10 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+                  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  <span> Servicio Delivery</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-4 col-sm-4 col-xs-offset-1 col-sm-offset-1">
+                  <a type="submit" class="btn btn-warning" style="margin: 1em 0 3em 0">Confirmar pedido</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
